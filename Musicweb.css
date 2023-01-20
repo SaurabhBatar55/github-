@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #babac7;
+    
+    color: #fff;
+    line-height: 1.6;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(79, 131, 155);
+    color: rgb(223, 226, 235);
+    position: fixed;
+}
+
+.music-nav .music .inner-music{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+   
+}
+
+.music-nav .music .inner-music a{
+    text-decoration: none;
+    font-size: larger;
+    padding: 2.0rem;
+    margin-top: 50px;
+    color: black;
+    justify-items: center;
+    font-size: 1.2rem;
+}
+
+.music-nav .music .inner-music li{
+   padding: 10px;
+}
+
+.music-nav .music .inner-music .categories{
+    font-style: italic;
+}
+
+nav li:hover {
+    background-color: #444;
+
+  }
+
+  nav a#unique {
+    display: none;
+  }
+
+
+
+
+
+  @media  screen and (max-width: 580px) {
+          .categories {
+            display: none;
+          }
+        
+          #music-1 {
+            height: 50vh;
+          }
+
+          #music-1 .container {
+            margin-top: 15vh;
+        }
+    
+        #music-1 h1 {
+            font-size: 3rem;
+          }
+    
+        #music-1 h2 {
+            font-size: 1.5rem;
+        }
+    
+        nav {
+          height: auto;
+          border-bottom: 0;
+        }
+        nav ul {
+          display: none;
+          height: auto;
+        }
+        nav li {
+          width: 100%;
+          float: left;
+          position: relative;
+        }
+        nav a {
+          text-align: left;
+          width: 100%;
+          text-indent: 25px;
+          background: #333;
+          border-bottom: 1px solid #555;
+        }
+        nav a:hover {
+          background: #444;
+        }
+        nav a#unique:after {
+          content: "|||";
+          transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Safari and Chrome */
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          position: absolute;
+          right: 5px;
+          top: 20px;
+        }
+        nav a#openup {
+          display: block;
+          background-color: #333;
+          width: 100%;
+          position: relative;
+        }
+      }
+      .cf:before, .cf:after {
+        content: "";
+        display: table;
+      }
+    
+      .cf:after {
+        clear: both;
+      }
+    
+      .cf {
+        zoom: 1;
+      }
+  }
+
